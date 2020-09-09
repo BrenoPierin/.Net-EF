@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace API_Pedidos.Domains
 {
-    public class Produto : BaseDomain
+    public class BaseDomain
     {
-        public string NomeProduto { get; set; }
-        public float Preco { get; set; }
+        [Key]
+        public Guid Id { get; set; }
 
+        public BaseDomain()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }

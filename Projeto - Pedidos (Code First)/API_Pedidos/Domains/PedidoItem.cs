@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace API_Pedidos.Domains
 {
-    public class PedidoItem
+    public class PedidoItem : BaseDomain
     {
-        [Key]
-        public Guid Id { get; set; }
         public Guid IdPedido { get; set; }
         [ForeignKey("IdPedido")]
         public Pedido Pedido { get; set; }
@@ -19,9 +17,5 @@ namespace API_Pedidos.Domains
         [ForeignKey("IdProduto")]
         public Produto Produto { get; set; }
 
-        public PedidoItem()
-        {
-            Id = Guid.NewGuid();
-        }
     }
 }
