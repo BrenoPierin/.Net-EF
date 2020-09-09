@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ffXR/hp6hzUpjiLTbiflNS1XkH4iSVMrHdQRg9kXjPi1K9QlMyX69I0Rgz90g5aNOtRUJ/1t0apJcz8vxaLaPQ==",
+  "dgSpecHash": "jaCnch1ooXGyGKHV7c/UPLPXEFmqNtE+S8qsE1A+gm4GPS2eYi9GJPf8VNrea7VHE1uJW/82KrvXlFNqnjL3QA==",
   "success": true,
-  "projectFilePath": "C:\\Breno USA\\Senai 2 Semestre\\Projeto - Pedidos (Code First)\\API_Pedidos\\API_Pedidos.csproj",
+  "projectFilePath": "C:\\Breno USA\\Senai 2 Semestre\\.Net-EF\\Projeto - Pedidos (Code First)\\API_Pedidos\\API_Pedidos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Masseria\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Masseria\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

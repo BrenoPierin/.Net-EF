@@ -12,7 +12,7 @@ namespace API_Pedidos.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-AMAFSNH\\SQLEXPRESS;Initial Catalog=Loja;User ID=sa;Password=sa132;");
+                optionsBuilder.UseSqlServer(@"Data Source=.\SQLEXPRESS;Initial Catalog=Loja;User ID=sa;Password=sa132;");
             base.OnConfiguring(optionsBuilder);
 
 

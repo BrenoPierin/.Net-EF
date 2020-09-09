@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Breno USA\\Senai 2 Semestre\\Projeto - Pedidos (Code First)\\API_Pedidos\\API_Pedidos.csproj": {}
+    "C:\\Breno USA\\Senai 2 Semestre\\.Net-EF\\Projeto - Pedidos (Code First)\\API_Pedidos\\API_Pedidos.csproj": {}
   },
   "projects": {
-    "C:\\Breno USA\\Senai 2 Semestre\\Projeto - Pedidos (Code First)\\API_Pedidos\\API_Pedidos.csproj": {
+    "C:\\Breno USA\\Senai 2 Semestre\\.Net-EF\\Projeto - Pedidos (Code First)\\API_Pedidos\\API_Pedidos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Breno USA\\Senai 2 Semestre\\Projeto - Pedidos (Code First)\\API_Pedidos\\API_Pedidos.csproj",
+        "projectUniqueName": "C:\\Breno USA\\Senai 2 Semestre\\.Net-EF\\Projeto - Pedidos (Code First)\\API_Pedidos\\API_Pedidos.csproj",
         "projectName": "API_Pedidos",
-        "projectPath": "C:\\Breno USA\\Senai 2 Semestre\\Projeto - Pedidos (Code First)\\API_Pedidos\\API_Pedidos.csproj",
+        "projectPath": "C:\\Breno USA\\Senai 2 Semestre\\.Net-EF\\Projeto - Pedidos (Code First)\\API_Pedidos\\API_Pedidos.csproj",
         "packagesPath": "C:\\Users\\Masseria\\.nuget\\packages\\",
-        "outputPath": "C:\\Breno USA\\Senai 2 Semestre\\Projeto - Pedidos (Code First)\\API_Pedidos\\obj\\",
+        "outputPath": "C:\\Breno USA\\Senai 2 Semestre\\.Net-EF\\Projeto - Pedidos (Code First)\\API_Pedidos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Masseria\\AppData\\Roaming\\NuGet\\NuGet.Config",

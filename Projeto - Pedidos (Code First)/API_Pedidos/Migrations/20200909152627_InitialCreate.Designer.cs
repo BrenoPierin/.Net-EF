@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API_Pedidos.Migrations
 {
     [DbContext(typeof(PedidoContext))]
-    [Migration("20200909034657_InitialCreate")]
+    [Migration("20200909152627_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -50,17 +50,11 @@ namespace API_Pedidos.Migrations
                     b.Property<Guid>("IdProduto")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("idPedido")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("idProduto")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("idPedido");
+                    b.HasIndex("IdPedido");
 
-                    b.HasIndex("idProduto");
+                    b.HasIndex("IdProduto");
 
                     b.ToTable("PedidosItens");
                 });
@@ -86,11 +80,15 @@ namespace API_Pedidos.Migrations
                 {
                     b.HasOne("API_Pedidos.Domains.Pedido", "Pedido")
                         .WithMany()
-                        .HasForeignKey("idPedido");
+                        .HasForeignKey("IdPedido")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("API_Pedidos.Domains.Produto", "Produto")
                         .WithMany()
-                        .HasForeignKey("idProduto");
+                        .HasForeignKey("IdProduto")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

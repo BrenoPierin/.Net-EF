@@ -39,36 +39,34 @@ namespace API_Pedidos.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     IdPedido = table.Column<Guid>(nullable: false),
-                    idPedido = table.Column<Guid>(nullable: true),
-                    IdProduto = table.Column<Guid>(nullable: false),
-                    idProduto = table.Column<Guid>(nullable: true)
+                    IdProduto = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_PedidosItens", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_PedidosItens_Pedidos_idPedido",
-                        column: x => x.idPedido,
+                        name: "FK_PedidosItens_Pedidos_IdPedido",
+                        column: x => x.IdPedido,
                         principalTable: "Pedidos",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_PedidosItens_Produtos_idProduto",
-                        column: x => x.idProduto,
+                        name: "FK_PedidosItens_Produtos_IdProduto",
+                        column: x => x.IdProduto,
                         principalTable: "Produtos",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_PedidosItens_idPedido",
+                name: "IX_PedidosItens_IdPedido",
                 table: "PedidosItens",
-                column: "idPedido");
+                column: "IdPedido");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PedidosItens_idProduto",
+                name: "IX_PedidosItens_IdProduto",
                 table: "PedidosItens",
-                column: "idProduto");
+                column: "IdProduto");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

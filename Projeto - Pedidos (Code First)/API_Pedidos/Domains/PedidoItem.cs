@@ -12,11 +12,11 @@ namespace API_Pedidos.Domains
         [Key]
         public Guid Id { get; set; }
         public Guid IdPedido { get; set; }
-        [ForeignKey("idPedido")]
+        [ForeignKey("IdPedido")]
         public Pedido Pedido { get; set; }
 
         public Guid IdProduto { get; set; }
-        [ForeignKey("idProduto")]
+        [ForeignKey("IdProduto")]
         public Produto Produto { get; set; }
 
         public PedidoItem()
