@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace API_Pedidos.Migrations
 {
-    [DbContext(typeof(PedidoContext))]
+    [DbContext(typeof(ProdutoContext))]
     partial class PedidoContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

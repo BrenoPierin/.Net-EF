@@ -8,21 +8,21 @@ using System.Threading.Tasks;
 
 namespace API_Pedidos.Repositories
 {
-    public class ProdutoRepository : IProduto
+    public class PedidoRepository : IPedidoRepository
     {
         private readonly PedidoContext ctx;
 
-        public ProdutoRepository()
+        public PedidoRepository()
         {
             ctx = new PedidoContext();
 
         }
-
-        public void Adicionar(Produto produto)
+        public void Adicionar(Pedido pedido)
         {
             try
             {
-                ctx.Produtos.Add(produto);
+                ctx.Pedidos.Add(pedido);
+                ctx.SaveChanges();
             }
             catch (Exception ex)
             {
@@ -30,11 +30,11 @@ namespace API_Pedidos.Repositories
             }
         }
 
-        public Produto BuscarPorId(Guid Id)
+        public Pedido BuscarPorId(Guid Id)
         {
             try
             {
-                return ctx.Produtos.FirstOrDefault(c => c.Id == Id);
+                return ctx.Pedidos.FirstOrDefault(a => a.Id == Id);
 
             }
             catch (Exception ex)
@@ -43,32 +43,19 @@ namespace API_Pedidos.Repositories
             }
         }
 
-        public List<Produto> BuscarPorNome(string nome)
+        public void Editar(Pedido pedido)
         {
             try
             {
-                List<Produto> produtos = ctx.Produtos.Where(c => c.NomeProduto.Contains(nome)).ToList();
-                return produtos;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
+                Pedido pedidoTemp = BuscarPorId(pedido.Id);
 
-        public void Editar(Produto produto)
-        {
-            try
-            {
-                Produto produtoTemp = BuscarPorId(produto.Id);
+                if (pedidoTemp == null)
+                    throw new Exception("Pedido não encontrado");
 
-                if (produtoTemp == null)
-                    throw new Exception("Produto não encontrado");
+                pedidoTemp.Status = pedido.Status;
+                pedidoTemp.OrderDate = pedido.OrderDate;
 
-                produtoTemp.NomeProduto = produto.NomeProduto;
-                produtoTemp.Preco = produto.Preco;
-
-                ctx.Produtos.Update(produtoTemp);
+                ctx.Pedidos.Update(pedidoTemp);
 
                 ctx.SaveChanges();
             }
@@ -83,33 +70,30 @@ namespace API_Pedidos.Repositories
         {
             try
             {
-                Produto produto = BuscarPorId(Id);
+                Pedido pedido = BuscarPorId(Id);
 
-                if (produto == null)
-                    throw new Exception("Produto não encontrado");
+                if (pedido == null)
+                    throw new Exception("Pedido não encontrado");
 
-                ctx.Produtos.Remove(produto);
+                ctx.Pedidos.Remove(pedido);
                 ctx.SaveChanges();
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
-
         }
 
-        public List<Produto> Listar()
+        public List<Pedido> Listar()
         {
             try
             {
-                return ctx.Produtos.ToList();
+                return ctx.Pedidos.ToList();
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
-
         }
-
     }
 }
