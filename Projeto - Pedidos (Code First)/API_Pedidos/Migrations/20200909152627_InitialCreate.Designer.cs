@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace API_Pedidos.Migrations
 {
-    [DbContext(typeof(ProdutoContext))]
+    [DbContext(typeof(PedidoContext))]
     [Migration("20200909152627_InitialCreate")]
     partial class InitialCreate
     {
