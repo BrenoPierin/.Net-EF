@@ -22,34 +22,91 @@ namespace API_Pedidos.Controllers
         }
 
         [HttpGet]
-        public List<Produto> Get()
+        public IActionResult Get()
         {
-            return _produtoRepository.Listar();
+            try
+            {
+                var produtos = _produtoRepository.Listar();
+
+                if (produtos.Count == 0)
+                    return NoContent();
+                return Ok(produtos);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet("{id}")]
-        public Produto Get(Guid id)
+        public IActionResult Get(Guid id)
         {
-            return _produtoRepository.BuscarPorId(id);
+            try
+            {
+                var produto = _produtoRepository.BuscarPorId(id);
+
+                if (produto == null)
+                    return NotFound();
+
+                return Ok(produto);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+
+
         }
 
         [HttpPost]
-        public void Post(Produto produto)
+        public IActionResult Post(Produto produto)
         {
-            _produtoRepository.Adicionar(produto);
+            try
+            {
+                _produtoRepository.Adicionar(produto);
+
+                return Ok(produto);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPut("{id}")]
-        public void Put(Guid Id, Produto produto)
+        public IActionResult Put(Guid Id, Produto produto)
         {
-            produto.Id = Id;
-            _produtoRepository.Editar(produto);
+            try
+            {
+                produto.Id = Id;
+                _produtoRepository.Editar(produto);
+
+                return Ok(produto);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpDelete("{id}")]
-        public void Delete(Guid Id)
+        public IActionResult Delete(Guid Id)
         {
-            _produtoRepository.Excluir(Id);
+            try
+            {
+                _produtoRepository.Excluir(Id);
+
+                return Ok(Id);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
