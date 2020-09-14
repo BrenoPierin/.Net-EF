@@ -10,6 +10,7 @@ namespace API_Pedidos.Domains
     {
         public string NomeProduto { get; set; }
         public float Preco { get; set; }
+        public List<PedidoItem> PedidosItens { get; set; }
 
     }
 }

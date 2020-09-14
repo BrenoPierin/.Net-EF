@@ -10,7 +10,7 @@ namespace API_Pedidos.Interfaces
     {
         List<Pedido> Listar();
         Pedido BuscarPorId(Guid Id);
-        void Adicionar(Pedido pedido);
+        Pedido Adicionar(List<PedidoItem> pedidosItens);
         void Editar(Pedido pedido);
         void Excluir(Guid Id);    
     }

@@ -17,17 +17,34 @@ namespace API_Pedidos.Repositories
             ctx = new PedidoContext();
 
         }
-        public void Adicionar(Pedido pedido)
+
+        public Pedido Adicionar(List<PedidoItem> pedidosItens)
         {
             try
             {
+                Pedido pedido = new Pedido
+                {
+                    Status = "Pedido adicionado",
+                    OrderDate = DateTime.Now
+                };
+
+                foreach (var item in pedidosItens)
+                {
+                    pedido.PedidosItens.Add(new PedidoItem {
+                        IdPedido = pedido.Id, 
+                        IdProduto = item.IdProduto,
+                        });
+                }
+
                 ctx.Pedidos.Add(pedido);
                 ctx.SaveChanges();
+
+                return pedido;
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
-            }
+            }   
         }
 
         public Pedido BuscarPorId(Guid Id)

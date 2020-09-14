@@ -22,28 +22,56 @@ namespace API_Pedidos.Controllers
         }
 
         [HttpGet]
-        public List<Pedido> Get()
+        public IActionResult Get()
         {
-            return _pedidoRepository.Listar();
+            try
+            {
+                var pedidos = _pedidoRepository.Listar();
+
+                if (pedidos.Count == 0)
+                    return NoContent();
+
+                return Ok(pedidos);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet("{id}")]
-        public Pedido Get(Guid id)
+        public IActionResult Get(Guid id)
         {
-            return _pedidoRepository.BuscarPorId(id);
+            try
+            {
+                var pedido = _pedidoRepository.BuscarPorId(id);
+
+                if (pedido == null)
+                    return NotFound();
+
+                return Ok(pedido);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPost]
-        public void Post(Pedido pedido)
+        public IActionResult Post(List<PedidoItem> pedidositens)
         {
-            _pedidoRepository.Adicionar(pedido);
-        }
+            try
+            {
+                Pedido _pedido = _pedidoRepository.Adicionar(pedidositens);
+                return Ok(_pedido);
+            }
+            catch (Exception ex)
+            {
 
-        [HttpPut("{id}")]
-        public void Put(Guid Id, Pedido pedido)
-        {
-            pedido.Id = Id;
-            _pedidoRepository.Editar(pedido);
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpDelete("{id}")]

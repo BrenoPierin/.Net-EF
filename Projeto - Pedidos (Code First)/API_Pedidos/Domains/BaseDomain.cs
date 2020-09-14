@@ -9,7 +9,7 @@ namespace API_Pedidos.Domains
     public class BaseDomain
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
 
         public BaseDomain()
         {

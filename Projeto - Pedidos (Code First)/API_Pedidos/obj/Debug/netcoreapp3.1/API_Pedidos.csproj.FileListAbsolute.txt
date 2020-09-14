@@ -111,8 +111,6 @@ C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.csprojAssemblyReference.cache
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.AssemblyInfoInputs.cache
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.AssemblyInfo.cs
-C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.csproj.CoreCompileInputs.cache
-C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.MvcApplicationPartsAssemblyInfo.cache
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.RazorTargetAssemblyInfo.cache
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.csproj.CopyComplete
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\staticwebassets\API_Pedidos.StaticWebAssets.Manifest.cache
