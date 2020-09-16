@@ -18,6 +18,11 @@ namespace API_Pedidos.Repositories
 
         }
 
+        /// <summary>
+        /// Adiciona um novo pedido
+        /// </summary>
+        /// <param name="pedidosItens">Lista de pedidos itens</param>
+        /// <returns>Objeto Pedido</returns>
         public Pedido Adicionar(List<PedidoItem> pedidosItens)
         {
             try

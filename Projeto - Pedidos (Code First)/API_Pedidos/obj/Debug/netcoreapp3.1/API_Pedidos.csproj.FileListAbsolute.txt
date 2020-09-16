@@ -118,8 +118,15 @@ C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.dll
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.pdb
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.genruntimeconfig.cache
-C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.csproj.CoreCompileInputs.cache
-C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.MvcApplicationPartsAssemblyInfo.cache
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.csproj.CoreCompileInputs.cache
+C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.MvcApplicationPartsAssemblyInfo.cs
+C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.MvcApplicationPartsAssemblyInfo.cache
+C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\bin\Debug\netcoreapp3.1\API_Pedidos.xml
+C:\Breno USA\Senai 2 Semestre\.Net-EF\Projeto - Pedidos (Code First)\API_Pedidos\obj\Debug\netcoreapp3.1\API_Pedidos.xml

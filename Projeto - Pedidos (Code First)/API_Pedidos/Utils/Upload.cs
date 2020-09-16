@@ -11,7 +11,7 @@ namespace API_Pedidos.Utils
     {
         public static string Local(IFormFile file)
         {
-            var nomeArquivo = Guid.NewGuid().ToString().Replace("-", "") + Path.GetExtension(file.Imagem.FileName);
+            var nomeArquivo = Guid.NewGuid().ToString().Replace("-", "") + Path.GetExtension(file.FileName);
 
             var caminhoArquivo = Path.Combine(Directory.GetCurrentDirectory(), @"wwwRoot\upload\imagens", nomeArquivo);
 
@@ -19,7 +19,7 @@ namespace API_Pedidos.Utils
 
             file.CopyTo(streamImagem);
 
-            return = "https://localhost:44379/upload/imagens/" + nomeArquivo;
+            return "https://localhost:44379/upload/imagens/" + nomeArquivo;
         }
     }
 }

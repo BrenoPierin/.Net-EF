@@ -18,6 +18,10 @@ namespace API_Pedidos.Repositories
 
         }
 
+        /// <summary>
+        /// Adiciona um novo produto
+        /// </summary>
+        /// <param name="produto">Produto a ser adcionado</param>
         public void Adicionar(Produto produto)
         {
             try
@@ -30,6 +34,11 @@ namespace API_Pedidos.Repositories
             }
         }
 
+        /// <summary>
+        /// Busca um produto pelo seu Id
+        /// </summary>
+        /// <param name="id">Id do produto</param>
+        /// <returns></returns>
         public Produto BuscarPorId(Guid Id)
         {
             try
@@ -43,6 +52,11 @@ namespace API_Pedidos.Repositories
             }
         }
 
+        /// <summary>
+        /// Busca produto pelo nome
+        /// </summary>
+        /// <param name="nome">Nome do produto</param>
+        /// <returns>Retorna um produto</returns>
         public List<Produto> BuscarPorNome(string nome)
         {
             try
@@ -56,6 +70,10 @@ namespace API_Pedidos.Repositories
             }
         }
 
+        /// <summary>
+        /// Edita um produto
+        /// </summary>
+        /// <param name="produto">Dados do produto</param>
         public void Editar(Produto produto)
         {
             try
@@ -79,6 +97,10 @@ namespace API_Pedidos.Repositories
             }
         }
 
+        /// <summary>
+        /// Remove um produto
+        /// </summary>
+        /// <param name="id">Id do Produto</param>
         public void Excluir(Guid Id)
         {
             try
@@ -98,6 +120,10 @@ namespace API_Pedidos.Repositories
 
         }
 
+        /// <summary>
+        /// Lista todos os produto
+        /// </summary>
+        /// <returns>Lista de Produtos</returns>
         public List<Produto> Listar()
         {
             try
