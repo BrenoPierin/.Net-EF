@@ -67,7 +67,13 @@ namespace API_Pedidos.Controllers
                 if (produto == null)
                     return NotFound();
 
-                return Ok(produto);
+                Moeda dolar = new Moeda();
+
+                return Ok(new
+                {
+                    produto,
+                    ValorDolar = produto.Preco / dolar.GetDolarValue()
+                });
             }
             catch (Exception ex)
             {
